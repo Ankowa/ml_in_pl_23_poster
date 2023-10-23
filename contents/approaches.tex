@@ -1,8 +1,8 @@
 \block{\textsc{Problem: lack of nonmembers set}}{
-    We cannot run MIA evaluation without nonmembers. A few approaches has been proposed:
+    \textit{We cannot run MIA evaluation without nonmembers}. A few approaches has been proposed:
     \begin{enumerate}{
-        \item Fine-tune Stable Diffusion on a new dataset. \textbf{Pitfall}: too trivial problem due to overfitting.    % TODO: add citation
-        \item Train a new model on a new dataset. \textbf{Pitfall}: too expensive.  % TODO: add citation
+        \item Fine-tune Stable Diffusion on a new dataset\cite{duan2023diffusion}. \textbf{Pitfall}: too trivial problem due to overfitting.
+        \item Train a new model on a new dataset. \textbf{Problem}: too expensive.
         \item Create a dataset with similar properties to the original one. \textbf{Challenge}: distribution mismatch.
     }\end{enumerate}
 }

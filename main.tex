@@ -5,14 +5,16 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{capt-of}
+\usepackage{tcolorbox}
+
 
 \input{packages}
 \input{apparence}
 
 \title{\parbox{1700pt}{Towards More Realistic Membership Inference Attacks on Large Diffusion Models}}
 
-\author{Jan Dubiński$^1$, Antoni Kowalczuk$^{1,2}$, Stanisław Pawlak$^1$, Przemysław Rokita$^1$, Tomasz Trzciński$^{1,3,4,5}$,\par \hspace{0.5cm} Paweł Morawiecki$^6$}
-\institute{$^1$Warsaw University of Technology $^2$AI Society Golem $^3$Jagiellonian University $^4$IDEAS NCBR $^5$Tooploox $^6$Polish Academy of Sciences}
+\author{Jan Dubiński$^1$, Antoni Kowalczuk$^{1,2}$, Stanisław Pawlak$^1$, Przemysław Rokita$^1$, Tomasz Trzciński$^{1,3,4}$,\par \hspace{0.5cm} Paweł Morawiecki$^5$}
+\institute{$^1$Warsaw University of Technology, $^2$AI Society Golem, $^3$IDEAS NCBR, $^4$Tooploox, $^5$Polish Academy of Sciences}
 
 \usetitlestyle[]{sampletitle}
 \setlength{\columnseprule}{0.4pt}
@@ -23,7 +25,7 @@
 \maketitle
 
 % --- Columns
-\draw[eric-lab, line width=2mm, loosely dotted] (-13,40) -- (-13,-45);
+\draw[eric-lab, line width=2mm, loosely dotted] (-13,40) -- (-13,-60);
 \draw[eric-lab, line width=2mm, loosely dotted] (15,40) -- (15,-25);
 
 %------------------------------------------------------------------------------
@@ -50,64 +52,63 @@
         % ---------------------------------  POKEMON Teaser ----------
 
         \input{contents/pokemon_teaser.tex}
-        
+
         %%%%%%%%%%%%%%% Column 2 %%%%%%%%%%%%%
 
         \subcolumn{.33}
 
-        % --------------------------------- PARTIE 4  ----------
-        
-        \input{contents/placeholder.tex}
-
         % ------------------------------------ LAION-mi dataset ------------
-        
+
         \input{contents/LAION-mi_diagram.tex}
 
         % ------------------------------------ Challenges ------------
-        
-        \input{contents/placeholder.tex}
+
+        \input{contents/LAION-mi_challenges.tex}
 
         % ------------------------------------ Deduplication plots ------------
-        
+
         \input{contents/dedup_plots.tex}
 
         % ------------------------------------ Evaluation table ------------
-        
+
         \input{contents/eval_table.tex}
+        \block{}{
+            \vspace*{-4cm}
+            \printbibliography
+        }
 
         %%%%%%%%%%%%%%%%%%%%%%%% Column 3 %%%%%%%%%%%%%%%%%%%%%%%%%   
 
         \subcolumn{.33}
 
         % ------------------------------------ Distribution check ------------
-        
+
         \input{contents/distribution_mismatch.tex}
 
         % ------------------------------------ PCA plots ------------
-        
+
         \input{contents/pca_plots.tex}
 
         % ------------------------------------ FID table ------------
-        
+
         \input{contents/fid_table.tex}
 
         % ------------------------------------ LAION-mi pics ------------
-        
+
         \input{contents/LAION-mi_plots.tex}
 
         % ------------------------------------ QR code to paper ------------
-        
-        % \input{contents/qr.tex}
+
+        \input{contents/qr.tex}
 
     \end{subcolumns}
 
 
     % ---------------------------------  References ----------
-    \block{}{\vspace{1cm}
-        \printbibliography}
+
 \end{columns}
 
 % ----------------- Footer -------------
-\node [above right, text=white,outer sep=45pt,minimum width=\paperwidth, align=center, draw, fill=titledarkcolor, color=Orange] at (-43.6,-61) { \textcolor{white}{\normalsize Contact: prenom.nom@univ-lyon2.fr}};
+\node [above right, text=white,outer sep=45pt,minimum width=\paperwidth, align=center, draw, fill=titledarkcolor, color=Orange] at (-51.6,-61) { \textcolor{white}{\normalsize Contact: antonikowalcz@gmail.com}};
 
 \end{document}
