@@ -20,16 +20,16 @@
 \begin{document}
 \maketitle
 
-% --- Lignes entre les colonnes
+% --- Columns
 \draw[eric-lab, line width=2mm, loosely dotted] (-13,40) -- (-13,-45); 
 \draw[eric-lab, line width=2mm, loosely dotted] (15,40) -- (15,-25);
 
 %------------------------------------------------------------------------------
-% --------------------- CORPS DU POSTER ---------------------
+% --------------------- Corpus of the poster ---------------------
 \begin{columns}
 \column{1}
 \begin{subcolumns}
-    %%%%%%%%%%%% COLONNE 1 %%%%%%%%%%%%%
+    %%%%%%%%%%%% Column 1 %%%%%%%%%%%%%
     \subcolumn{.33}
    
     % ---------------------------------MOTIVATIONS ----------
@@ -66,7 +66,7 @@
             
           \vspace{-2cm}}
           
-    %%%%%%%%%%%%%%% COLONNE 2 %%%%%%%%%%%%%
+    %%%%%%%%%%%%%%% Column 2 %%%%%%%%%%%%%
     \subcolumn{.33}
     
         % ---------------------------------  PARTIE 3----------
@@ -107,7 +107,7 @@
             \vspace{-2cm}}
 
  
- %%%%%%%%%%%%%%%%%%%%%%%% COLONNE 3 %%%%%%%%%%%%%%%%%%%%%%%%%   
+ %%%%%%%%%%%%%%%%%%%%%%%% Column 3 %%%%%%%%%%%%%%%%%%%%%%%%%   
     \subcolumn{.33}
 
     % ---------------------------------------------
@@ -128,12 +128,12 @@
     \end{subcolumns}
     
 
-    % ---------------------------------  BIBLIO ----------
+    % ---------------------------------  References ----------
     \block{}{\vspace{1cm}
        \printbibliography}
        \end{columns}
 
-% ----------------- Ligne colorée à la fin du document -------------
+% ----------------- Footer -------------
 \node [above right, text=white,outer sep=45pt,minimum width=\paperwidth, align=center, draw, fill=titledarkcolor, color=Orange] at (-43.6,-61) { \textcolor{white}{\normalsize Contact: prenom.nom@univ-lyon2.fr}};
 
 \end{document}
